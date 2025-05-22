@@ -1,8 +1,7 @@
-export default function Home() {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <main>
-      <h1>Sensor Dashboard</h1>
-      <p>Welcome! The API is running. Try /api/sensor-data for data...</p>
-    </main>
+    <html lang="en">
+      <body>{children}</body>
+    </html>
   );
 }
